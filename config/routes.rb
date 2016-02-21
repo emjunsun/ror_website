@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get 'test/test' => 'test#test'
 
+
   resources :testpages
 
   resources :articles
