@@ -1,6 +1,6 @@
 <h1>测试路由</h1>
 <p>测试实例变量在controller与view之间的传递。</p>
-<p>
-
-</p>
 <h3><%=@me%>，是从controller中传递过来的</h3>
+
+<a href="/welcome/index">返回</a>
+<%= link_to("返回", :controller => 'welcome', :action => 'index') %>
