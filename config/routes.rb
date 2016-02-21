@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
-
+  get 'welcome/index' => 'welcome#index'
 
   get 'test/test' => 'test#test'
+
+  resources :testpages
 
   resources :articles
   # The priority is based upon order of creation: first created -> highest priority.

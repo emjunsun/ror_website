@@ -2,5 +2,10 @@
 <p>测试实例变量在controller与view之间的传递。</p>
 <h3><%=@me%>，是从controller中传递过来的</h3>
 
-<a href="/welcome/index">返回</a>
+<a href="/testpages">返回</a>
 <%= link_to("返回", :controller => 'welcome', :action => 'index') %>
+<br>
+<%= link_to "复数形式路由", controller: 'testpages' %>
+
+<br>
+<%= link_to("复数形式路由2", :controller => 'testpages') %>
